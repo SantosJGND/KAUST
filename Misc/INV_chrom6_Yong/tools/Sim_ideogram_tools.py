@@ -77,6 +77,8 @@ def extract_profiles_class(global_data,target_ind_dict):
     
 ####################################################
 ### Classification of KDE collections
+####################################################
+### Classification of KDE collections
 
 def Merge_class(Ref_profiles,focus_indicies,Out,Diff_threshold,X_threshold):
     Blocks_genome = recursively_default_dict()
@@ -89,7 +91,9 @@ def Merge_class(Ref_profiles,focus_indicies,Out,Diff_threshold,X_threshold):
         Pop_labels= Likes[[x for x in Likes.keys()][0]].keys()
         
         Likes = {x:[Likes[bl][x] for bl in sorted(Likes.keys())] for x in Pop_labels}
-        Likes = {x:np.array([y[0] for y in Likes[x]]) for x in Likes.keys()}
+        
+        #Likes = {x:np.array([y[0] for y in Likes[x]]) for x in Likes.keys()}
+        Likes = {x:np.array(y) for x,y in Likes.items()}
 
         Topo = []
         
@@ -97,6 +101,7 @@ def Merge_class(Ref_profiles,focus_indicies,Out,Diff_threshold,X_threshold):
         #range_Crossed = [x for x in range(Aro.shape[0])]
         
         for acc in focus_indicies:
+            
             Guys = np.array([Likes[x][:,acc] for x in Pop_labels])
             Guys = np.nan_to_num(Guys)
             Guys = [[[y,0][int(y<=X_threshold)] for y in x] for x in Guys]
@@ -145,7 +150,7 @@ def Merge_class(Ref_profiles,focus_indicies,Out,Diff_threshold,X_threshold):
         
         
         Topo = np.array(Topo).T
-        
+        print(Topo.shape)
         Clove = {CHR:{Points[x]:Topo[x,] for x in range(len(Points))}}
         
         Blocks_genome.update(Clove)
@@ -286,7 +291,6 @@ def Merge_class_mix(Ref_profiles,focus_indicies,Out,Diff_threshold,X_threshold):
 #########################################################
 ### Ideogram Processing
 
-
 def compress_ideo(df,chromosome_list, Out):
     '''
     Merge neighboring windows of the same class individual-wise. Returns pandas df.
@@ -326,6 +330,7 @@ def compress_ideo(df,chromosome_list, Out):
 
 
 
+
 # Here's the function that we'll call for each dataframe (once for chromosome
 # ideograms, once for genes).  The rest of this script will be prepping data
 # for input to this function
@@ -360,8 +365,8 @@ def chromosome_collections(df, y_positions, height,  **kwargs):
         del df['width']
 
 
-
-def return_ideogram(ideo, chromosome_list,ID,out= True,height=30,width= 10,xticks= 100000,ypad= 30,xpad=10,xfont= 10):
+def return_ideogram(ideo, chromosome_list,ID,color_lookup= {},out= True,height=30,width= 10,
+                    xticks= 100000,ypad= 30,xpad=10,xfont= 10, yfont= 25,start= 0,end= 0,square= False):
     # Height of each ideogram
     chrom_height = 1
 
@@ -410,16 +415,18 @@ def return_ideogram(ideo, chromosome_list,ID,out= True,height=30,width= 10,xtick
     
 
     # Colors for different chromosome stains
-    color_lookup = {
-        'red': [255, 0, 0],
-        'yellow': [255, 255, 0],
-        'blue': [0, 0, 255],
-        'orange': [255, 165, 0],
-        'green': [50, 205, 50],
-        'black': [0, 0, 0],
-        'purple': [128, 0, 128],
-        'silver': [211, 211, 211],
-    }
+    if not color_lookup:
+        
+        color_lookup = {
+            'red': [255, 0, 0],
+            'yellow': [255, 255, 0],
+            'blue': [0, 0, 255],
+            'orange': [255, 165, 0],
+            'green': [50, 205, 50],
+            'black': [0, 0, 0],
+            'purple': [128, 0, 128],
+            'silver': [211, 211, 211],
+        }
 
     # Add a new column for colors
     
@@ -432,6 +439,17 @@ def return_ideogram(ideo, chromosome_list,ID,out= True,height=30,width= 10,xtick
 
     fig = plt.figure(figsize=figsize)
     ax = fig.add_subplot(111)
+    
+    if square:
+        from matplotlib.patches import Rectangle
+        someX= start
+        someY= -1
+
+        currentAxis= plt.gca()
+        currentAxis.add_patch(Rectangle((someX,someY),
+        end-start,len(chromosome_list) + 2,
+        fill= None, alpha= 1, linewidth= 5))
+
 
     # Now all we have to do is call our function for the ideogram data...
     print("adding ideograms...")
@@ -440,16 +458,19 @@ def return_ideogram(ideo, chromosome_list,ID,out= True,height=30,width= 10,xtick
 
     # Axes tweaking
     ax.set_xticks([x for x in range(min(ideo.start),max(ideo.end),int(xticks))])
-    ax.set_xticklabels([round(x / float(xticks),3) for x in range(min(ideo.start),max(ideo.end),int(xticks))])
+    ax.set_xticklabels([round(x,3) for x in range(min(ideo.start),max(ideo.end),int(xticks))])
     plt.xticks(fontsize = xfont,rotation = 90)
     ax.tick_params(axis = 'x',pad= xpad)
 
     ax.tick_params(axis='y', which='major', pad= ypad)
     ax.set_yticks([chrom_centers[i] for i in chromosome_list])
-    ax.set_yticklabels(chromosome_list, fontsize = 5)
+    
+    ax.set_yticklabels(chromosome_list, fontsize = yfont)
     ax.axis('tight')
     if out == True:
         plt.savefig('Ideo_step_' + '_' + ID + '.png',bbox_inches = 'tight')
+    plt.show()
+    plt.close()
     return fig
 
 
@@ -490,14 +511,13 @@ def KDE_window_profiles(Windows,label_vector,ref_labels,Chr= 1,n_comps= 4):
     return Windows_profiles, var_comp_store
 
 
-
 def class_and_ideo(Windows_profiles,Out,label_vector,Comparison_threshold= 3,Outlier_threshold= 1e-4,groups_plot=[0],colors= 'standard',
                   alt_col= []):
-
+    
+    print(label_vector)
     label_coords= {
         z:[x for x in range(len(label_vector)) if label_vector[x] == z] for z in list(set(label_vector))
     }
-
 
     focus_indexes= list(it.chain(*[label_coords[x] for x in groups_plot]))
 
@@ -505,7 +525,8 @@ def class_and_ideo(Windows_profiles,Out,label_vector,Comparison_threshold= 3,Out
         color_ref= ['red','yellow','blue','black','orange','purple','green','silver','silver','red3','deepskyeblue','navy','chartreuse','darkorchid3','goldenrod2']
     else:
         color_ref= alt_col
-
+    
+    print(focus_indexes)
     Blocks = Merge_class(Windows_profiles,focus_indexes,Out,Comparison_threshold,Outlier_threshold)
 
     Ideo_KDE = []
