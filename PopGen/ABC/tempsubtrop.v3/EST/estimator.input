@@ -1,0 +1,14 @@
+//input file
+estimationType standard 
+simName ../tempsubtrop_sim_Obs0_sampling1.txt
+obsName ../observed/tempsubtrop.v3_jointMAFpop1_0.obs
+
+distSimFile SIM_transf.txt
+distObsFile OBS_transf.txt
+
+params 1-12
+stadardizeStats 1
+writeRetained 1
+obsPValue 1
+
+maxReadSims 999

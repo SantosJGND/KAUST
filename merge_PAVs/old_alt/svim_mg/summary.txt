@@ -1,0 +1,16 @@
+mg_pav	svim_pav	Nmg	Nsvim	intersect	mg_unique	svim_unique
+MH63RS2_tract.bed	genome1.genome2.svim_pavSumm.txt	19359	26252	13378	6491	12888
+ZS97RS_tract.bed	genome1.genome3.svim_pavSumm.txt	19178	25936	13295	6394	12656
+OsN22_tract.bed	genome1.genome4.svim_pavSumm.txt	18437	25913	12839	6104	13092
+Azucena_tract.bed	genome1.genome5.svim_pavSumm.txt	8332	13144	5857	2735	7293
+OsIR64_tract.bed	genome1.genome6.svim_pavSumm.txt	19995	26739	13734	6791	13021
+OsVYID01_tract.bed	genome1.genome7.svim_pavSumm.txt	11608	17936	8158	3811	9790
+OsVYIE01_tract.bed	genome1.genome8.svim_pavSumm.txt	21409	29733	14986	7000	14763
+OsWGGU01_tract.bed	genome1.genome9.svim_pavSumm.txt	21490	28240	14759	7285	13498
+OsVYIF01_tract.bed	genome1.genome10.svim_pavSumm.txt	20151	27544	13967	6752	13591
+OsVXJH01_tract.bed	genome1.genome11.svim_pavSumm.txt	20146	27176	13842	6859	13351
+OsVYIG01_tract.bed	genome1.genome12.svim_pavSumm.txt	22164	30971	15563	7215	15422
+OsVYIB01_tract.bed	genome1.genome13.svim_pavSumm.txt	19334	26150	13404	6453	12758
+OsVYIC01_tract.bed	genome1.genome14.svim_pavSumm.txt	9111	14278	6294	3069	7990
+OsVYIH01_tract.bed	genome1.genome15.svim_pavSumm.txt	7647	11608	5244	2641	6375
+OsVXJI01_tract.bed	genome1.genome16.svim_pavSumm.txt	20127	27260	13894	6774	13379

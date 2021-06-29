@@ -1,0 +1,7 @@
+file	PIm	NEte	NEadh
+OcoarctataChrK_b1_noRep_nomiss_gp1.windowed.pi	0.000264667	5089.75	10179.5
+OcoarctataChrK_b1_noRep_nomiss_gp2.windowed.pi	0.000285152	5483.692307692308	10967.384615384615
+OcoarctataChrK_b1_noRep_nomiss_gp3.windowed.pi	0.000233571	4491.75	8983.5
+OcoarctataChrL_b1_noRep_nomiss_gp1.windowed.pi	0.000253333	4871.788461538462	9743.576923076924
+OcoarctataChrL_b1_noRep_nomiss_gp2.windowed.pi	0.000264545	5087.403846153846	10174.807692307691
+OcoarctataChrL_b1_noRep_nomiss_gp3.windowed.pi	0.00022464299999999998	4320.0576923076915	8640.115384615383

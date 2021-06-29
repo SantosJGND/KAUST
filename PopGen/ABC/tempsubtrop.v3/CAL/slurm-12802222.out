@@ -1,0 +1,744 @@
+Loading module for PLINK 5.3
+PLINK 5.3 is now loaded
+GNU 6.4.0 is now loaded
+Loading module for angsd
+angsd 1.0 is now loaded
+PLINK v1.90b5.3 64-bit (21 Feb 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to VCF/gp.log.
+Options in effect:
+  --bfile /home/x_garciaj/RICE_data/3K_plink/core_3K_nonCoding
+  --extract range window_select.txt
+  --geno 0.2
+  --keep VCF/ind_file.txt
+  --maf 0.01
+  --out VCF/gp
+  --recode vcf
+
+515825 MB RAM detected; reserving 257912 MB for main workspace.
+6275764 variants loaded from .bim file.
+948 people (0 males, 0 females, 948 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to VCF/gp.nosex .
+--extract range: 6264053 variants excluded.
+--extract range: 11711 variants remaining.
+--keep: 40 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 40 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate in remaining samples is 0.962396.
+435 variants removed due to missing genotype data (--geno).
+7531 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+3745 variants and 40 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to VCF/gp.vcf ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+rm: cannot remove ‘plink*’: No such file or directory
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2248704 bytes (2196K, 2.14453MB)
+// ********** Peak memory usage: 57679872 bytes (56328K, 55.0078MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 49037312 bytes (47888K, 46.7656MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 56586240 bytes (55260K, 53.9648MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 56455168 bytes (55132K, 53.8398MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 57131008 bytes (55792K, 54.4844MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 49618944 bytes (48456K, 47.3203MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 62836736 bytes (61364K, 59.9258MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 56291328 bytes (54972K, 53.6836MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 52903936 bytes (51664K, 50.4531MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 50221056 bytes (49044K, 47.8945MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 55812096 bytes (54504K, 53.2266MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 62640128 bytes (61172K, 59.7383MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 52125696 bytes (50904K, 49.7109MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 69476352 bytes (67848K, 66.2578MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 50548736 bytes (49364K, 48.207MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 52756480 bytes (51520K, 50.3125MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 52314112 bytes (51088K, 49.8906MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2273280 bytes (2220K, 2.16797MB)
+// ********** Peak memory usage: 57622528 bytes (56272K, 54.9531MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 56274944 bytes (54956K, 53.668MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2269184 bytes (2216K, 2.16406MB)
+// ********** Peak memory usage: 56606720 bytes (55280K, 53.9844MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 57331712 bytes (55988K, 54.6758MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+// ********** Initial memory usage: 2265088 bytes (2212K, 2.16016MB)
+// ********** Peak memory usage: 54984704 bytes (53696K, 52.4375MB)
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+Processing 2 populations - odict_keys(['gp1', 'gp2'])
+Doing 1D sfs - gp1
+Doing 1D sfs - gp2
+Doing 2D sfs - ('gp1', 'gp2')
+Doing multiSFS for all pops
+Loading module for Python
+Python 3.6.2 is now loaded
+Loading module for Anaconda
+Anaconda 2019.10 is now loaded
+
+// Initial random seed:
+1234
+
+// RunInitializeCallbacks():
+initializeMutationRate(1.3e-08);
+initializeMutationType(1, 0.5, "f", 0);
+initializeGenomicElementType(1, m1, 1);
+initializeGenomicElement(g1, 0, 99999);
+initializeRecombinationRate(1e-08);
+
+// Starting run at generation <start>:
+1 
+
+hi burnin
+pop_splits
+slurmstepd: error: *** JOB 12802222 ON cn514-15-r CANCELLED AT 2020-11-14T15:49:27 DUE TO TIME LIMIT ***

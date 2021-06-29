@@ -1,0 +1,55 @@
+initialize() {
+        //initializeTreeSeq();
+        
+        initializeMutationRate(MUTR);
+	initializeRecombinationRate(RECR);
+	// mutation types: 
+	initializeMutationType("m1", 0.5, "f", 0.0); //neutral, s = 0
+	initializeMutationType("m2", 0.5, "s", "return runif(1, -0.001, -0.0001);"); //weakly deleterious, 1<2Nes<20, uniform distribution
+	initializeMutationType("m3", 0.5, "s", "return runif(1, -0.01, -0.001);"); //moderately deleterious, 1<2Nes<10, uniform distribution	
+	initializeMutationType("m4", 0.5, "s", "return runif(1, -0.1, -0.01);"); //strongly deleterious, -1<2Nes<-100, uniform distribution
+        
+    
+	// g1 genomic element type: uses m1 for all mutations
+	initializeGenomicElementType("g1", m1, 1.0); //intergenic
+	initializeGenomicElementType("g2", c(m1, m2, m3, m4), c(f0, f1, f2, f3)); //functional: weakly deleterious, gamma
+    
+	//chromosome with a single functional element on one side
+	initializeGenomicElement(g1, 0, 49999);
+    	initializeGenomicElement(g2, 50000, 50000 + 2560);
+    
+}
+
+
+// ancestral pop
+1 late() {
+        sim.addSubpop("p0", NANC);
+        p0.setSelfingRate(SRW);
+}
+
+CRASH late() {
+
+        //sim.readFromPopulationFile(treefile);
+        // crash of Ntem to NCD inds
+        p0.setSubpopulationSize(NCD);
+        p0.setSelfingRate(SRD);
+}
+
+RECOV {
+        // grow NTEM population to current size.
+        p0.setSubpopulationSize(NTPN);
+}
+
+
+// Output to VCF.
+SAMP late()
+{
+    p0.outputMSSample(100, F, "*", outfilems, F);
+    
+    g= p0.sampleIndividuals(100).genomes;
+    g.outputVCF(outvcf);
+}
+//print all fixed mutations
+SAMP late(){sim.outputFixedMutations(outfixed, append=F);}
+SAMP { }
+

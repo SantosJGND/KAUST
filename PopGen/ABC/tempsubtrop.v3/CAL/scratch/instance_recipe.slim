@@ -1,0 +1,66 @@
+initialize() {
+	defineConstant("r",1e-8);
+	defineConstant("L", 1e6);
+	initializeMutationRate(1.3e-8);
+
+	initializeMutationType("m1", 0.5, "f", 0.0);
+
+	initializeGenomicElementType("g1", m1, 1.0);
+	initializeGenomicElement(g1, 0, 99999);
+	initializeRecombinationRate(1e-8);
+}
+
+// ancestral pop
+1 {
+	sim.addSubpop("p1", 16341);
+	catn('hi burnin');
+	p1.setSelfingRate(0.125853);
+}
+
+// Split population into two (burnin = 50K)
+50000 {
+	sim.addSubpopSplit("p2", 4313, p1);
+	p1.setSubpopulationSize(4367);
+	p2.setSelfingRate(0.125853);
+	catn('pop_splits');
+}
+
+
+62724 {
+	// crash of Ntem
+	p1.setSubpopulationSize(600);
+	p1.setSelfingRate(0.780507);
+}
+
+65724 {
+	// crash of Ntem
+	p1.setSubpopulationSize(15385);
+}
+
+68882 {
+	sim.addSubpopSplit("p3", 19230, p2);
+	p3.setSelfingRate(0.780507);
+
+	p1.setMigrationRates(c(p3), c(1.5679e-05));
+	p3.setMigrationRates(c(p1), c(8.59794e-05));
+	p2.setMigrationRates(c(p3), c(0.000106755));
+}
+
+// Generation 58000 is the present. Output to VCF.
+72724 late() {
+	g = c();
+	pops= 0:2;
+	samples= c(20,0,20);
+
+        pop_samp= sim.subpopulations[0].sampleIndividuals(samples[0]).genomes;
+        g= c(g, pop_samp);
+
+        pop_samp= sim.subpopulations[1].sampleIndividuals(samples[1]).genomes;
+        g= c(g, pop_samp);
+
+        pop_samp= sim.subpopulations[2].sampleIndividuals(samples[2]).genomes;
+        g= c(g, pop_samp);
+
+
+	g.outputVCF("vcf_temp.vcf",simplifyNucleotides=T);
+}

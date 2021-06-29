@@ -1,0 +1,191 @@
+ABCsampler Logfile
+*******************
+Reading inputfile 'tempsub_ABCcali.input' ..... done!
+Random generator initialized with seed -886796
+Performing a Standard Simulation
+
+Filenames
+**********
+Prefix for output files: tempsubtrop_sim
+Name of file with prior definitions: tempsubtrop.v3.est
+Reading priors and rules 'tempsubtrop.v3.est' ... done:
+ -10 Priors
+ -4 Combined Priors
+ -0 Rules
+Names of the simulation input files:
+ -'AB-Sinterface.txt'
+Corresponding names of the temporal simulation input files:
+ -'AB-Sinterface-temp.txt'
+Using simulation program: 'launch_SLiM.sh'
+After each simulation, the following script is launched: fold_sfs.sh
+
+Initialization
+**********
+create first input file and initialize ....
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	6.11922e-05	19834	0.00837017	13503	7044	7319	1.79295e-05	0.901142	0.114185	4030	76864	69834	72834	79834
+The following file is read to get the summary statistics: 'summary_stats_temp.txt'
+Reading observed data file 'tempsubtrop.v3_jointMAFpop1_0.obs' ... done, read 441 Data
+sumStatProgram not defined -> simulation program or script writes the file: 'summary_stats_temp.txt' with the statistics.
+  -number of observed Statistics: 441
+  -number of simulated Statistics: 441
+All Statistics are written in one single Outputfile.
+Number of simulations to perform: 50
+Number of repeats per parameter vector is set to: 1
+
+Simulations
+**********
+Loop is started.....
+0/50
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	5.85119e-05	19988	0.0482786	18945	9371	7911	0.000210347	0.725684	0.748418	2224	75212	69988	72988	79988
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000816421	18810	0.00198976	15235	6005	4513	0.0064307	0.673316	0.664279	6	71816	68810	71810	78810
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00575631	17477	0.00131648	19473	7867	2232	8.5013e-05	0.695895	0.118767	1404	71881	67477	70477	77477
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00517639	15734	0.000627837	14478	9874	5366	0.000348016	0.711126	0.654075	2708	71442	65734	68734	75734
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	1.24808e-05	19317	0.00285142	16363	9613	5441	1.00215e-05	0.939046	0.309776	578	72895	69317	72317	79317
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	1.51872e-05	17281	0.000740062	18349	4913	8367	0.00100492	0.841015	0.811281	4615	74896	67281	70281	77281
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	5.9425e-05	10671	0.00434408	18453	5322	4398	0.000402755	0.761911	0.119766	4067	67738	60671	63671	70671
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00376355	12472	0.00174876	11852	8388	1546	0.00148483	0.877345	0.342624	3402	68874	62472	65472	72472
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	1.28688e-05	17111	0.00739233	19029	6198	8870	7.00473e-05	0.851428	0.245679	1369	71480	67111	70111	77111
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00319113	18793	0.020402	18741	9713	5994	0.000244269	0.961367	0.684356	3121	74914	68793	71793	78793
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0204503	12647	0.0323865	17142	4199	5696	0.00112863	0.705086	0.560909	636	66283	62647	65647	72647
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	2.36211e-05	17086	0.00213026	15326	7295	3947	0.000974175	0.882621	0.14564	4637	74723	67086	70086	77086
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000492901	19742	0.0107032	16593	9178	2778	0.000584111	0.619843	0.311356	4775	77517	69742	72742	79742
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0177645	17803	0.000702344	14261	8589	7917	0.00280806	0.776303	0.626555	4585	75388	67803	70803	77803
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.006524	11977	0.00432012	12914	4825	7544	0.00901115	0.927521	0.117124	4545	69522	61977	64977	71977
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000622186	14266	0.000863113	12742	7095	5421	5.88874e-05	0.967497	0.111294	4926	72192	64266	67266	74266
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000839663	19276	0.00288652	19306	4614	5120	0.00253895	0.931918	0.241911	3068	75344	69276	72276	79276
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000701227	11781	0.00155526	12443	3073	3380	0.000318981	0.873798	0.436577	3655	68436	61781	64781	71781
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00378586	17826	0.011985	16753	9201	5547	0.0024419	0.667285	0.793062	1244	72070	67826	70826	77826
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000485879	14786	0.0140777	13316	7273	5134	0.00852058	0.814744	0.454837	3626	71412	64786	67786	74786
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0119331	15941	0.00545259	18474	5134	5284	2.84896e-05	0.876802	0.617273	1880	70821	65941	68941	75941
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0176261	13647	0.0293751	10147	7090	9820	0.000119848	0.842189	0.440168	3984	70631	63647	66647	73647
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0144313	16700	0.000887643	12418	3724	4004	0.00426746	0.698306	0.611039	132	69832	66700	69700	76700
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00124179	14312	0.0133641	11985	2898	3177	0.000276231	0.741126	0.577571	3860	71172	64312	67312	74312
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000512395	15854	0.00178338	19240	2095	9726	0.00326558	0.919447	0.655903	4720	73574	65854	68854	75854
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00381121	10925	0.00164559	18758	8163	4925	0.00810711	0.767489	0.590876	1058	64983	60925	63925	70925
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00272249	18485	0.0125569	15484	6558	6233	8.20571e-05	0.869524	0.336823	3977	75462	68485	71485	78485
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000126145	10830	0.0014394	10223	7647	7510	0.000243587	0.660128	0.207448	4884	68714	60830	63830	70830
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00130165	12979	0.000146358	14788	7426	2124	0.000910609	0.702397	0.128235	4118	70097	62979	65979	72979
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000133968	19072	0.000111292	10884	9791	3304	0.000213176	0.883514	0.11925	1762	73834	69072	72072	79072
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00129087	17319	0.000552673	13246	8001	8296	0.00173199	0.799042	0.839587	515	70834	67319	70319	77319
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	1.00073e-05	12852	0.0072403	15078	2080	8619	0.000696501	0.760683	0.243269	2086	67938	62852	65852	72852
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000137688	19177	0.0225253	10344	7691	9365	5.10935e-05	0.651623	0.17782	3658	75835	69177	72177	79177
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0038347	14723	0.00833354	11728	6424	4500	0.00546579	0.844435	0.630019	774	68497	64723	67723	74723
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00280199	17671	0.0109439	14145	7767	3500	2.08664e-05	0.665686	0.516293	1801	72472	67671	70671	77671
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00166341	14091	0.0017014	10057	8490	9931	0.000152192	0.621694	0.495639	3201	70292	64091	67091	74091
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	5.11202e-05	13350	0.0135589	14659	4871	3974	5.50945e-05	0.60679	0.379289	3943	70293	63350	66350	73350
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000192004	15644	0.00934513	10324	7795	9425	0.000324745	0.748905	0.439008	641	69285	65644	68644	75644
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000527543	19352	0.00734239	13249	5875	3758	0.00664952	0.887753	0.211152	2106	74458	69352	72352	79352
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0107403	13794	0.00435387	12505	8649	2224	0.000280843	0.70971	0.414337	4428	71222	63794	66794	73794
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0113407	12830	0.0125336	10763	4768	2689	0.00155186	0.713853	0.687679	1031	66861	62830	65830	72830
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	5.27566e-05	18211	0.0442592	14808	5693	9068	0.00175377	0.605361	0.562573	862	72073	68211	71211	78211
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	2.72338e-05	13256	0.00928555	15328	4860	7132	0.000172337	0.968794	0.865256	4092	70348	63256	66256	73256
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0246508	17377	0.000785719	14556	9719	7065	0.0077344	0.891251	0.321466	2752	73129	67377	70377	77377
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000223448	18719	0.00885566	14937	9617	2075	0.00105057	0.737767	0.269411	1130	72849	68719	71719	78719
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	8.72949e-05	19612	0.000687166	16402	9742	8094	8.8811e-05	0.71575	0.248994	2587	75199	69612	72612	79612
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00145307	13900	0.0497944	11175	4544	2662	2.49979e-05	0.666859	0.161756	1104	68004	63900	66900	73900
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000901137	18771	0.0277038	11770	2902	9506	0.000243722	0.908213	0.852148	3861	75632	68771	71771	78771
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.00400935	17186	0.0163173	16897	6420	9783	0.00214577	0.636299	0.770115	2165	72351	67186	70186	77186
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.000210325	13307	0.00039454	11965	9220	6534	0.00322761	0.819335	0.170376	1027	67334	63307	66307	73307
+End of Program!!

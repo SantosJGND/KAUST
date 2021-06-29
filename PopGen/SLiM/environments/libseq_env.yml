@@ -1,0 +1,22 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - jaredgk
+
+dependencies:
+  - python
+  - pip
+  - numpy=1.19
+  - pandas=1.1.3
+  - biopython=1.78
+  - libsequence=1.9.8
+  - matplotlib=3.3.2
+  - pylibseq=0.2.3
+  - py-popgen
+  - rpy2
+  - pysam
+  - scipy
+  - cython 
+  - htslib
+  - shapeit4

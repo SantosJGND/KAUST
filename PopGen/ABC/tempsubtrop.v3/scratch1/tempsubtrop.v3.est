@@ -1,0 +1,24 @@
+// Priors and rules file
+// *********************
+[PARAMETERS]
+//#isInt? #name #dist.#min #max
+//all Ns are in number of haploid individuals
+1 $EMERG unif 1E4 2E4 
+1 $TRANSIT unif 1 5000 
+1 $NANC unif 1E4 2E4
+1 $NSUB unif 15E2 1E4 
+1 $NTEM unif 15E2 1E4 
+0 $DOMM logunif 1E-5 3E-2 
+0 $RECM logunif 1E-5 1E-2 
+0 $INTROM logunif 1E-4 5E-2 
+0 $SRW logunif 1E-1 9E-1 
+0 $SRD logunif 6E-1 9.9E-1 
+
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+1 $MERGE = $EMERG + 50000 
+1 $MER_G = $MERGE + 3000 
+1 $CONN = $MER_G + $TRANSIT 
+1 $SAMP = $MER_G + 7000

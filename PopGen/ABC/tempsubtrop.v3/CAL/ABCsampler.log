@@ -1,0 +1,33 @@
+ABCsampler Logfile
+*******************
+Reading inputfile 'tempsub_ABCcali.input' ..... done!
+Random generator initialized with seed -136004
+Performing a Standard Simulation
+
+Filenames
+**********
+Prefix for output files: tempsubtrop_sim
+Name of file with prior definitions: tempsubtrop.v3.est
+Reading priors and rules 'tempsubtrop.v3.est' ... done:
+ -10 Priors
+ -4 Combined Priors
+ -0 Rules
+Names of the simulation input files:
+ -'AB-Sinterface.txt'
+Corresponding names of the temporal simulation input files:
+ -'AB-Sinterface-temp.txt'
+Using simulation program: 'launch_SLiM.sh'
+After each simulation, the following script is launched: fold_sfs.sh
+
+Initialization
+**********
+create first input file and initialize ....
+Simulation program returned an error! The following parameters were used:
+Parameter names:	$DOMM	$EMERG	$INTROM	$NANC	$NSUB	$NTEM	$RECM	$SRD	$SRW	$TRANSIT	$CONN	$MERGE	$MER_G	$SAMP
+Values:	0.0135894	16583	0.000916287	17423	7281	5705	0.0015896	0.875847	0.177999	4187	73770	66583	69583	76583
+The following file is read to get the summary statistics: 'summary_stats_temp.txt'
+Reading observed data file 'tempsubtrop.v3_jointMAFpop1_0.obs' ... done, read 441 Data
+sumStatProgram not defined -> simulation program or script writes the file: 'summary_stats_temp.txt' with the statistics.
+
+ERROR: The file containing the computed summary statistics 'summary_stats_temp.txt' could not be opened!
+End of Program!!

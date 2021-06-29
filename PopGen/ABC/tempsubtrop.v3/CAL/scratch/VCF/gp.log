@@ -1,0 +1,35 @@
+PLINK v1.90b5.3 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile /home/x_garciaj/RICE_data/3K_plink/core_3K_nonCoding
+  --extract range window_select.txt
+  --geno 0.2
+  --keep VCF/ind_file.txt
+  --maf 0.01
+  --out VCF/gp
+  --recode vcf
+
+Hostname: cn514-15-r
+Working directory: /home/x_garciaj/Projects/SLiM_ABC/tempsubtrop.v3/CAL/scratch
+Start time: Sat Nov 14 14:44:21 2020
+
+Random number seed: 1605354261
+515825 MB RAM detected; reserving 257912 MB for main workspace.
+6275764 variants loaded from .bim file.
+948 people (0 males, 0 females, 948 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to VCF/gp.nosex .
+--extract range: 6264053 variants excluded.
+--extract range: 11711 variants remaining.
+--keep: 40 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 40 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.962396.
+435 variants removed due to missing genotype data (--geno).
+7531 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+3745 variants and 40 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to VCF/gp.vcf ... done.
+
+End time: Sat Nov 14 14:44:23 2020

@@ -1,0 +1,15 @@
+MH63RS2_tract.bed
+ZS97RS_tract.bed
+OsN22_tract.bed
+Azucena_tract.bed
+OsIR64_tract.bed
+OsVYID01_tract.bed
+OsVYIE01_tract.bed
+OsWGGU01_tract.bed
+OsVYIF01_tract.bed
+OsVXJH01_tract.bed
+OsVYIG01_tract.bed
+OsVYIB01_tract.bed
+OsVYIC01_tract.bed
+OsVYIH01_tract.bed
+OsVXJI01_tract.bed

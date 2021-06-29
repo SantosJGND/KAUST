@@ -1,0 +1,48 @@
+initialize() {
+        //initializeTreeSeq();
+        
+        initializeMutationRate(MUTR);
+	initializeRecombinationRate(RECR);
+	// mutation types: 
+	initializeMutationType("m1", 0.5, "f", 0.0); //neutral, s = 0
+	initializeMutationType("m2", 0.5, "f", 0.0);
+        
+    
+	// g1 genomic element type: uses m1 for all mutations
+	initializeGenomicElementType("g1", m1, 1.0); //intergenic
+	initializeGenomicElementType("g2", m2, 1.0); //functional: weakly deleterious, gamma
+    
+	//chromosome with a single functional element on one side
+	initializeGenomicElement(g1, 0, 49999);
+    	initializeGenomicElement(g2, 50000, 50000 + 2560);
+    
+}
+
+
+// ancestral pop
+1 late() {
+	sim.addSubpop("p0", NANC);
+        p0.genomes.readFromMS(msdump, m1);
+        p0.setSelfingRate(SRW);
+
+        //sim.readFromPopulationFile(treefile);
+        // crash of Ntem to NCD inds
+        p0.setSubpopulationSize(NCD);
+        p0.setSelfingRate(SRD);
+}
+
+3000 {
+        // grow NTEM population to current size.
+        p0.setSubpopulationSize(NTPN);
+}
+
+
+// Output to VCF.
+10000 late()
+{
+    p0.outputMSSample(100, F, "*", outfilems, F);
+}
+//print all fixed mutations
+10000 late(){sim.outputFixedMutations(outfixed, append=F);}
+10000 { }
+

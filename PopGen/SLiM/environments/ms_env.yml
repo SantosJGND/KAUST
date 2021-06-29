@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+
+dependencies:
+  - python
+  - pip
+  - msprime
+  - pyslim

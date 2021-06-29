@@ -1,0 +1,15 @@
+//a simple inputfile for ABCsampler
+samplerType standard
+//only uniform priors
+estName tempsubtrop.v3.est
+obsName tempsubtrop.v3_jointMAFpop1_0.obs
+outName tempsubtrop_sim
+nbSims 50
+writeHeader 1
+//
+simulationProgram launch_SLiM.sh
+simInputName AB-Sinterface.txt
+simParam #SIMINPUTNAME#tempsubtrop.v3.slim
+//
+launchAfterSim fold_sfs.sh
+launchAfterSimParam vcf_temp.vcf

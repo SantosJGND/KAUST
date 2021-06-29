@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - pip
+  - numpy=1.19
+  - scikit-allel=1.3.2
+  - pandas=1.1.3
+  - dadi=2.1.0
+  - matplotlib=3.3.2
+
+

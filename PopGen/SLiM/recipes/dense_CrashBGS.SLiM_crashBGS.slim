@@ -1,0 +1,77 @@
+initialize() {
+        //initializeTreeSeq();
+
+    	inter_len = 2703;
+    	intron_len = 167;
+    	exon_len = 177;
+    	num_genes = 200;
+    	num_exons = 3;
+	num_introns = 2;
+	full_block_len = inter_len + exon_len*num_exons + intron_len*num_introns;
+ 	exon_block_len = exon_len + intron_len;
+	
+        initializeMutationRate(MUTR);
+	initializeRecombinationRate(RECR);
+	// mutation types: 
+	initializeMutationType("m1", 0.5, "f", 0.0); //neutral, s = 0
+	initializeMutationType("m2", 0.5, "s", "return runif(1, -0.001, -0.0001);"); //weakly deleterious, 1<2Nes<20, uniform distribution
+	m2.convertToSubstitution = F;
+	initializeMutationType("m3", 0.5, "s", "return runif(1, -0.01, -0.001);"); //moderately deleterious, 1<2Nes<10, uniform distribution	
+	initializeMutationType("m4", 0.5, "s", "return runif(1, -0.1, -0.01);"); //strongly deleterious, -1<2Nes<-100, uniform distribution
+        
+    
+	// g1 genomic element type: uses m1 for all mutations
+	initializeGenomicElementType("g1", m1, 1.0); //intergenic
+	initializeGenomicElementType("g2", m1, 1.0); //intronic
+	initializeGenomicElementType("g3", c(m1, m2, m3, m4), c(f0, f1, f2, f3)); //functional: weakly deleterious, gamma
+    
+    	//defining genes
+    	for (index_a in 0:(num_genes-1)){
+        	//print (index1);
+        	initializeGenomicElement(g1, (index_a*full_block_len), (index_a*full_block_len + inter_len-1)); //intergenic
+        	for (index_b in 0:(num_introns-1)){
+            		//print (index_a);
+            		//print (index_b);
+            		initializeGenomicElement(g3, ((index_a*full_block_len) + inter_len + (index_b*exon_block_len)), (index_a*full_block_len + inter_len + index_b*exon_block_len + exon_len - 1));//exon
+            		initializeGenomicElement(g2, (index_a*full_block_len + inter_len + index_b*exon_block_len + exon_len), (index_a*full_block_len + inter_len + index_b*exon_block_len + exon_len + intron_len-1));//intron
+            	}
+        	initializeGenomicElement(g3, (index_a*full_block_len + inter_len + (index_b+1)*exon_block_len), (index_a*full_block_len + inter_len + (index_b+1)*exon_block_len + exon_len - 1));//closing with exon
+	}
+ 	initializeGenomicElement(g1, full_block_len*num_genes, full_block_len*num_genes + inter_len - 1);//extra intergenic towards the end
+	catn(paste("full length: ",full_block_len * num_genes));
+    
+}
+
+
+// ancestral pop
+1 late() {
+        sim.addSubpop("p0", NANC);
+        p0.setSelfingRate(SRW);
+}
+
+CRASH late() {
+
+        //sim.readFromPopulationFile(treefile);
+        // crash of Ntem to NCD inds
+        p0.setSubpopulationSize(NCD);
+        p0.setSelfingRate(SRD);
+}
+
+RECOV {
+        // grow NTEM population to current size.
+        p0.setSubpopulationSize(NTPN);
+}
+
+
+// Output to VCF.
+SAMP late()
+{
+    p0.outputMSSample(100, F, "*", outfilems, F);
+    g= p0.sampleIndividuals(100).genomes;
+    g.outputVCF(outvcf);
+
+}
+//print all fixed mutations
+SAMP late(){sim.outputFixedMutations(outfixed, append=F);}
+SAMP { }
+

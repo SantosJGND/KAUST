@@ -1,0 +1,21 @@
+
+  ABCestimator  
+***********
+
+Filenames:
+----------
+- Reading inputfile 'estimator.input' ... done!
+- Performing a standard estimation.
+- Reading observed data file '../observed/tempsubtrop.v3_jointMAFpop1_0.obs' ... done!
+   -> 1 data sets with 441 statistics each.
+- Reading simulation file '../tempsubtrop_sim_Obs0_sampling1.txt' ... done!
+   -> 999 simulations with 12 parameters and 441 statistics each.
+
+Files to calculate distances:
+-----------------------------
+- Reading observed data file 'OBS_transf.txt' ... done!
+   -> 1 data sets with 35 statistics each.
+- Reading simulation file 'SIM_transf.txt' ...
+ERROR: Problem reading the parameter string!
+
+End of Program!!
