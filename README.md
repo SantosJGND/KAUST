@@ -1,24 +1,28 @@
 ## sub-projects scripts
 
-### bridge_contigs/
+### [contig bridging using reads](bridge_contigs/)
 
 Map reads to assembly, find reads that bridge contigs.Find *contig connected components*; summary statistics.
 
 work directory:
 /ibex/scratch/projects/c2060/SANTOSJ_DIR/Projects/Commiphora/assembly_double/assembly_refinements/mappings
 
-### Distribution/
+### [Uniform distribution tests](Distribution/)
 
 Kolmogorov-Smirnof test across contigs, readme inside. 
 
-### GeneXtract_v1/
+### [gff distances](gff_distances/)
+
+Distances and overlap between segments in separate gff files. README inside./ 
+
+### [orthologous gene identification](GeneXtract_v1/)
 
 Map and fasta to list of assemblies, extract best positions and corresponding sequences, 
 - subset orfs; 
 - predict protein;
 - construct graph; 
 
-### IIMs/
+### [Inversion Informative Markers](IIMs/)
 
 Calculate ld within inversions, use Inversion matrix as input. 
 
@@ -26,14 +30,14 @@ Calculate ld within inversions, use Inversion matrix as input.
 /ibex/scratch/projects/c2060/SANTOSJ_DIR/subProjects/IIMs
 
 
-### merge_PAVs/
+### [Merging Annotations](merge_PAVs/)
 
 Merge presence absence calls from different software. Given standardized input format. 
 
 i. merge Insertions and Deletions separately.
 ii. Produce overlap statistics and 3-way venn diagrams.
 
-### Ocoarcata_demography/
+### [Demographic inference](Ocoarcata_demography/)
 
 Demographic inference using single nucleotide polimorphism data and fastsimcoal2.6 software.
 
@@ -45,7 +49,7 @@ Used for inference of Oryza Coarctata.
 - data directory:
 /ibex/scratch/projects/c2060/SANTOSJ_DIR/Projects/Ocoarc/
 
-### PopGen/
+### [Population genetics jobs](PopGen/)
 
 Population genetics applications. 
 
@@ -57,7 +61,7 @@ Population genetics applications.
 - ePSMC demographic inference and selfing-rate estimation ; 
 - ABC inference;
 
-### INVtype/
+### [Inversion typing](INVtype/)
 
 This was meant to determine inversion orientatio from mapping strands. But it was a bust. Still.
 

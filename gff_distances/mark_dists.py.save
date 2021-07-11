@@ -1,0 +1,57 @@
+import pandas as pd 
+import numpy as np
+
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Process some integers.')
+
+parser.add_argument('--genes', type= str, default= "")
+parser.add_argument('--edta', type= str, default= "")
+
+args = parser.parse_args()
+
+#tig00000106     .       contig  1       61031230        .       .       .       ID=tig00000106;Name=tig00000106
+
+genes= pd.read_csv(args.genes, sep= "\t", header= None, comment= '#')
+genes.columns= ["contig","m1","pred","start","end","q","s","t","idt"]
+genes= genes[genes.pred == "gene"].reset_index(drop= True)
+
+tes= pd.read_csv(args.edta, sep= "\t", header= None, comment= '#')
+tes.columns= ["contig","m1","pred","start","end","q","s","t","idt"]
+tes= tes[tes['pred'].str.contains("LTR")]
+
+print(tes.shape)
+print(genes.shape)
+print(genes.head())
+summary_dump=[]
+
+for chrom in genes.contig.unique():
+	genc= genes[genes.contig == chrom].reset_index(drop= True)
+	tec= tes[tes.contig == chrom].reset_index(drop= True)
+	
+	genpos= np.array(genc[["start","end"]], dtype= int)
+	tepos= np.array(tec[["start","end"]], dtype= int)
+	
+	for ix in range(genc.shape[0]):
+		start,end= genpos[ix,:]
+		overlap= tec[(tec.start < end) & (tec.end > start)]
+		ovid= ",".join(overlap.idt)
+		sdists= np.min(tec[:] - start, axis= 1)
+		edists= np.min(tec - end, axis= 1)
+		dists= np.array([sdists, edists])
+		dists[dists < 0 ] = +np.Inf
+		dists= np.min(dists,axis= 1)
+		distmin= np.argmin(dists)
+		summ= [chrom, start, end, genc.idt[ix],tec.idt[distmin], dists[distmin], len(overlap), ovid]
+		print(summ)
+		summary_dump.append(summ)
+	
+	
+summary_dump= np.array(summary_dump, dtype= str)
+summary_dump= pd.DataFrame(summary_dump)
+summary_dump.columns= ["contig","idt","start","end", "closest","cdist","overlap","Overlap_id"]
+
+summary_dump.to_csv("summary_dump",index= False, header= True, sep= "\t")
+
+
