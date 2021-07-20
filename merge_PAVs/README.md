@@ -63,3 +63,13 @@ This script manages the actual merging.
 
 
 If 3 or more software are merged, merge_bed.py outputs venn diagrams of shared PAVs for every possible 3-way software combination. 
+
+Example summary:
+
+- 1. Variant frequency across software.
+
+- 2. Total calls per software. 
+
+- 3. Example 3-way venn diagram. 
+
+![summary plots](./output_slide.png)
